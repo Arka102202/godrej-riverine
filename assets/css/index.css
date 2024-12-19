@@ -1,13 +1,169 @@
-body {
-    background: #f9f9f9;
-    margin: 0;
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400..900&display=swap');
+
+* {
+    font-family: "Maven Pro", sans-serif;
     padding: 0;
-    font-family: sans-serif;
     margin: 0;
     box-sizing: border-box;
 }
 
+body {
+    background: #f9f9f9;
+}
 
+img {
+    width: 100%;
+}
+
+
+/* hero section */
+
+.hero-sec {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%), url("../imgs/Gifs/water\ 1.gif");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+
+    padding: 2rem;
+
+    overflow-x: hidden;
+}
+
+.hero-sec::after {
+    content: "";
+
+    width: 100%;
+    aspect-ratio: 10220 / 1200;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+    background-image: url("../imgs/pngs/top\ wave.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    overflow-x: hidden;
+}
+
+
+.hero-sec .top {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.menu-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menu-box a {
+    color: #fff;
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.hero-sec .middle {
+    width: 60%;
+}
+
+.hero-sec .bottom {
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.hero-sec .bottom p {
+    text-align: center;
+    line-height: 1.8;
+    letter-spacing: 1.5px;
+
+    font-weight: 500;
+}
+
+.enq-btn {
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    outline: none;
+
+    padding: 1rem 2rem;
+
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.btm-wave {
+    width: 100%;
+    aspect-ratio: 10220 / 1200;
+}
+
+/* overview */
+
+.overview-sec{
+    background-color: #FFF;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 3rem;
+}
+
+.overview-sec .top {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.overview-sec .middle {
+    width: 70%;
+    text-align: center;
+    line-height: 1.5;
+    letter-spacing: 1.2px;
+}
+
+.overview-sec .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 4rem;
+
+    width: 70%;
+}
+
+.overview-sec .bottom .img-box {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
 
 /*   emi cal css  */
 /* .emi-calculator {
