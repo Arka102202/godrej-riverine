@@ -7,10 +7,6 @@
     box-sizing: border-box;
 }
 
-body {
-    background: #f9f9f9;
-}
-
 img {
     width: 100%;
 }
@@ -38,7 +34,10 @@ img {
     overflow-x: hidden;
 }
 
-.hero-sec::after {
+.hero-sec::after,
+.overview-sec::after,
+.heading::after,
+.price-sec::after {
     content: "";
 
     width: 100%;
@@ -122,8 +121,8 @@ img {
 
 /* overview */
 
-.overview-sec{
-    background-color: #FFF;
+.overview-sec {
+
 
     display: flex;
     flex-direction: column;
@@ -131,6 +130,8 @@ img {
     align-items: center;
 
     gap: 3rem;
+
+    position: relative;
 }
 
 .overview-sec .top {
@@ -141,7 +142,9 @@ img {
     align-items: center;
 }
 
-.overview-sec .middle {
+.overview-sec .middle,
+.location-sec .middle,
+.plan-sec .middle {
     width: 70%;
     text-align: center;
     line-height: 1.5;
@@ -165,18 +168,224 @@ img {
     align-items: flex-end;
 }
 
+.overview-sec .enq-btn,
+.location-sec .enq-btn {
+    border: 1px solid #000;
+}
+
+.btm-wave-2 {
+    width: 100%;
+    aspect-ratio: 1440 / 313;
+}
+
+.overview-sec::after {
+    background-image: url("../imgs/Gifs/riverin-wave-gif.gif");
+    aspect-ratio: 1440 / 313;
+}
+
+/* location-sec */
+
+.location-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 3rem;
+
+    position: relative;
+
+    padding: 4rem 2rem;
+}
+
+.heading {
+    font-size: 2vw;
+    font-weight: 500;
+
+    padding-bottom: 2rem;
+
+    position: relative;
+}
+
+.heading::after {
+    width: 10rem;
+    aspect-ratio: 974 / 57;
+    background-image: url("../imgs/pngs/Underline wave 3.png");
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.location-sec .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 4rem;
+
+    width: 70%;
+}
+
+.location-sec .bottom iframe {
+    width: 100%;
+}
+
+/* plan section */
+
+.plan-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 3rem;
+
+    position: relative;
+
+    padding: 4rem 0;
+}
+
+.plan-sec .middle {
+    font-size: 1.8vw;
+    font-weight: 500;
+}
+
+.plan-sec .bottom {
+
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 3rem;
+
+    background-image: url("../imgs/Gifs/riverin-wave-gif_1.gif");
+    background-color: #e1f4fd;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    padding: 6rem 4rem;
+
+}
+
+.plan-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+
+    width: 20rem;
+
+    gap: 1rem;
+
+    padding: 1.5rem;
+
+    background: #fff;
+
+    border-radius: 20px;
+}
+
+
+
 /*   emi cal css  */
-/* .emi-calculator {
+
+.price-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 3rem;
+
+    position: relative;
+
+    padding: 4rem 0;
+}
+
+.price-sec .middle {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+
+    gap: 3rem;
+
+    width: 100%;
+}
+
+.pricing-table {
+    width: 90%;
+    max-width: 400px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.pricing-header {
+    background-color: #39a9dc;
+    color: #fff;
+    text-align: left;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.pricing-body {
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+}
+
+.pricing-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.pricing-row:last-child {
+    border-bottom: none;
+}
+
+.pricing-type {
+    font-weight: 500;
+}
+
+.pricing-price {
+    color: #333;
+    font-weight: bold;
+}
+
+.additional-info {
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    margin-top: 10px;
+    font-style: italic;
+    font-weight: 600;
+}
+
+@media (max-width: 480px) {
+    .pricing-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .pricing-price {
+        margin-top: 5px;
+    }
+}
+
+.emi-calculator {
     background: white;
     border: 1px solid #ccc;
-    border-radius: 10px;
-    padding: 20px;
-    width: 300px;
+    border-radius: 5px;
+    padding: 2rem;
+    width: 400px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+.emi-calculator h2 {
     text-align: center;
+    margin-bottom: 1rem;
 }
 
 .input-group {
@@ -238,5 +447,60 @@ input[type="range"]:hover::-webkit-slider-thumb {
     font-size: 24px;
     font-weight: bold;
     color: #333;
-} */
+}
+
 /*   emi cal css  */
+
+.price-sec::after{
+    background-image: url("../imgs/pngs/down\ wave.png");
+}
+
+.gallery-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: relative;
+
+    /* padding: 4rem 0; */
+
+    margin-top: -4rem;
+}
+
+.g-box {
+
+    width: 100%;
+    height: 80vh;
+
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 4rem;
+    font-weight: 700;
+    color: #fff;
+
+}
+
+.g-box-1 {
+    background-image: url("../imgs/Images/755610157_edit\ 1\ 2.jpg");
+    background-color: #33333333;
+}
+
+.g-box-2 {
+    background-image: url("../imgs/Images/181736171.jpg");
+}
+
+.g-box-3 {
+    background-image: url("../imgs/Images/DPPS_536771614.jpg");
+}
+
+.g-box-4 {
+    background-image: url("../imgs/Images/35815151.jpg");
+}

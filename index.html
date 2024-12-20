@@ -84,58 +84,154 @@
             <p>ENQUIRE NOW</p>
         </button>
 
+        <div class="btm-wave-2">
+        </div>
+
     </section>
 
-    <div class="btm-wave">
-    </div>
-    <!-- <div class="emi-calculator">
-        <h2>EMI CALCULATOR</h2>
+    <!-- location sec -->
+    <section class="location-sec">
+        <p class="heading">NEIGHBOURHOOD</p>
+        <div class="middle">
+            <p>Nestled in the heart of the city, this prestigious neighborhood flows seamlessly into a world of
+                exclusivity, surrounded by some of the most iconic landmarks, including the lush expanse of Noida Golf
+                Course Road and the serene oasis of the Botanical Garden. A destination of distinction, it offers an
+                unparalleled blend of serene living and easy accessibility, where life moves effortlessly like a gentle
+                stream, placing you within reach of the city’s most coveted experiences</p>
+        </div>
+        <div class="bottom">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.3535544453916!2d77.33555687484701!3d28.55914418741068!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce51b97a43bfd%3A0xfbf49e9161f9c828!2sGodrej%20Riverine%2C%20Sector%2044%2C%20Noida!5e0!3m2!1sen!2sin!4v1734674149973!5m2!1sen!2sin"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
-        <div class="input-group">
-            <label for="loan-amount">Loan Amount</label>
-            <div class="slider-info">
-                <span id="loan-amount-value">30,000</span>
-                <span>₹</span>
+        <button class="enq-btn">
+            <p>ENQUIRE NOW</p>
+        </button>
+
+    </section>
+
+    <!-- plan sec -->
+    <section class="plan-sec">
+        <p class="heading">PLAN</p>
+        <div class="middle">
+            <p>Unit Plans</p>
+        </div>
+        <div class="bottom">
+            <div class="plan-box">
+                <p>3.5 BHK</p>
+                <img src="./assets/imgs/plans/unit_plan_01.png" alt="">
             </div>
-            <input id="loan-amount" type="range" min="10000" max="100000" step="1000" value="30000" />
-        </div>
-
-        <div class="input-group">
-            <label for="advance-payment">Advance Payment</label>
-            <div class="slider-info">
-                <span id="advance-payment-value">20%</span>
-                <span id="advance-payment-amount">6,000</span>
+            <div class="plan-box">
+                <p>4 BHK</p>
+                <img src="./assets/imgs/plans/unit_plan_01.png" alt="">
             </div>
-            <input id="advance-payment" type="range" min="0" max="50" step="1" value="20" />
         </div>
 
-        <div class="input-group">
-            <label for="duration">Duration</label>
-            <div class="slider-info">
-                <span id="duration-value">25 Years</span>
+    </section>
+
+    <!-- price sec -->
+    <section class="price-sec">
+        <p class="heading">PRICING</p>
+
+        <div class="middle">
+
+            <div class="pricing-table">
+                <div class="pricing-body">
+                    <div class="pricing-header">PRICE</div>
+                    <div class="pricing-row">
+                        <span class="pricing-type">3.5 BHK</span>
+                        <span class="pricing-price">₹ 9.49 Cr. onwards</span>
+                    </div>
+                    <div class="pricing-row">
+                        <span class="pricing-type">4+ BHK</span>
+                        <span class="pricing-price">₹ 13.64 Cr. onwards</span>
+                    </div>
+                </div>
+                <div class="additional-info">
+                    GST, AMC, IFMS & other charges additional*
+                </div>
             </div>
-            <input id="duration" type="range" min="1" max="30" step="1" value="25" />
-        </div>
 
-        <div class="input-group">
-            <label for="interest-rate">Interest Rate</label>
-            <div class="slider-info">
-                <span id="interest-rate-value">7%</span>
+            <div class="emi-calculator">
+                <h2>EMI CALCULATOR</h2>
+
+                <div class="input-group">
+                    <label for="loan-amount">Loan Amount</label>
+                    <div class="slider-info">
+                        <span id="loan-amount-value">30,000</span>
+                        <span>₹</span>
+                    </div>
+                    <input id="loan-amount" type="range" min="10000" max="100000" step="1000" value="30000" />
+                </div>
+
+                <div class="input-group">
+                    <label for="advance-payment">Advance Payment</label>
+                    <div class="slider-info">
+                        <span id="advance-payment-value">20%</span>
+                        <span id="advance-payment-amount">6,000</span>
+                    </div>
+                    <input id="advance-payment" type="range" min="0" max="50" step="1" value="20" />
+                </div>
+
+                <div class="input-group">
+                    <label for="duration">Duration</label>
+                    <div class="slider-info">
+                        <span id="duration-value">25 Years</span>
+                    </div>
+                    <input id="duration" type="range" min="1" max="30" step="1" value="25" />
+                </div>
+
+                <div class="input-group">
+                    <label for="interest-rate">Interest Rate</label>
+                    <div class="slider-info">
+                        <span id="interest-rate-value">7%</span>
+                    </div>
+                    <input id="interest-rate" type="range" min="1" max="100" step="1" value="7" />
+                </div>
+
+                <div class="emi-result">
+                    <h3>Estimated Monthly EMI</h3>
+                    <p><span id="emi-value">170</span> ₹/month</p>
+                </div>
             </div>
-            <input id="interest-rate" type="range" min="1" max="100" step="1" value="7" />
+
         </div>
 
-        <div class="emi-result">
-            <h3>Estimated Monthly EMI</h3>
-            <p><span id="emi-value">170</span> ₹/month</p>
+        <div class="btm-wave">
         </div>
-    </div> -->
+
+    </section>
+
+    <!-- gallery sec -->
+    <section class="gallery-sec">
+        <div class="g-box g-box-1">
+            <p>A LIFE OF BLISS</p>
+        </div>
+        <div class="g-box g-box-2">
+            <p>A LIFE WELL CONNECTED</p>
+        </div>
+        <div class="g-box g-box-3">
+            <p>A LIFE OF INDULGENCE</p>
+        </div>
+        <div class="g-box g-box-4">
+            <p>A LIFE OF HAPPINESS</p>
+        </div>
+    </section>
+
+
+
 
     <!-- jQuery (Required) -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <!-- Owl Carousel JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.18/dist/lenis.min.js"></script> 
     <script src="assets/js/index.js"></script>
 </body>
 
