@@ -61,5 +61,17 @@ document.addEventListener('DOMContentLoaded', function () {
   // Disable lag smoothing in GSAP to prevent any delay in scroll animations
   gsap.ticker.lagSmoothing(0);
 
+  console.log(getComputedStyle(document.querySelector(".g-box img")).height)
+
+  gsap.to(".g-box img" , {
+    top: "-50%",
+    scrollTrigger : {
+      trigger: ".g-box",
+      start: "top bottom",
+      end: () => "+=" + getComputedStyle(document.querySelector(".g-box")).height,
+      scrub: 1
+    }
+  })
+
 
 });

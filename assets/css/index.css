@@ -500,6 +500,8 @@ input[type="range"]:hover::-webkit-slider-thumb {
 
     position: absolute;
 
+    top: 0;
+
 }
 
 .g-box-1 {
