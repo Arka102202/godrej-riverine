@@ -63,13 +63,43 @@ document.addEventListener('DOMContentLoaded', function () {
 
   console.log(getComputedStyle(document.querySelector(".g-box img")).height)
 
-  gsap.to(".g-box img" , {
-    top: "-50%",
+  gsap.to(".g-box-1 img" , {
+    top: "-100%",
     scrollTrigger : {
-      trigger: ".g-box",
+      trigger: ".gallery-sec",
       start: "top bottom",
-      end: () => "+=" + getComputedStyle(document.querySelector(".g-box")).height,
-      scrub: 1
+      end: () => "+=" + getComputedStyle(document.querySelector(".gallery-sec")).height,
+      scrub: true
+    }
+  })
+
+  gsap.to(".g-box-2 img" , {
+    top: "-100%",
+    scrollTrigger : {
+      trigger: ".gallery-sec",
+      start: "top bottom",
+      end: () => "+=" + getComputedStyle(document.querySelector(".gallery-sec")).height,
+      scrub: true
+    }
+  })
+
+  gsap.to(".g-box-3 img" , {
+    top: "-100%",
+    scrollTrigger : {
+      trigger: ".gallery-sec",
+      start: "top bottom",
+      end: () => "+=" + getComputedStyle(document.querySelector(".gallery-sec")).height,
+      scrub: true
+    }
+  })
+
+  gsap.to(".g-box-4 img" , {
+    top: "-100%",
+    scrollTrigger : {
+      trigger: ".gallery-sec",
+      start: "top bottom",
+      end: () => "+=" + getComputedStyle(document.querySelector(".gallery-sec")).height,
+      scrub: true
     }
   })
 
